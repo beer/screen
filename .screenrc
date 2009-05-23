@@ -1,21 +1,15 @@
-#caption always "lalala"
-#hardstatus alwayslastline "lalalala"
 defc1 off
 caption always "%-w%<%{=B GK}%n %t%{= KW}%+w"
 hardstatus alwayslastline "%{=b BW} {%l}%018=%{=b WK} %n %t %-029=%{YK} %Y %M %d(%D) %{RW} %C %A"
 defencoding utf-8 
 shelltitle shell
+escape ^A^A
+termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
+vbell off
+defscrollback 5000
+
 bind b encoding big5 utf8
 bind u encoding utf8 utf8
 bind w height -w 24
 bind m height -w
-#screen -t Ptt 0 tcsh
-#screen -t Ptt2 1 tcsh
-#screen -t Eden 2 tcsh
-#screen -t Wretch 3 tcsh
-#screen -t GGuy 4 tcsh
-#screen -t BNest 5 tcsh
-#screen -t CCCA 6 tcsh
-#screen -t IRC 7 tcsh
-termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
-termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
