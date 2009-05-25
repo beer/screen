@@ -3,7 +3,6 @@ caption always "%-w%<%{=B GK}%n %t%{= KW}%+w"
 hardstatus alwayslastline "%{=b BW} {%l}%018=%{=b WK} %n %t %-029=%{YK} %Y %M %d(%D) %{RW} %C %A"
 defencoding utf-8 
 shelltitle shell
-escape ^A^A
 termcapinfo screen 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
 termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
 vbell off
